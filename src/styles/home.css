@@ -1,0 +1,63 @@
+#home-main {
+  height: 530px;
+  /* background-color: #203138; */
+  background-image: linear-gradient(
+    345deg,
+    rgb(29, 6, 6),
+    rgba(8, 20, 16, 0.619),
+    rgb(25, 25, 35)
+  );
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 100px;
+}
+#main-left {
+  box-shadow: 0 0 10px white;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  /* background-image: linear-gradient(rgb(77, 122, 206), rgb(44, 44, 153)); */
+}
+#main-left:hover {
+  background-image: linear-gradient(to left, rgb(150, 16, 190), black);
+}
+h1#name {
+  font-weight: 700;
+  color: white;
+
+  font-size: clamp(30px, 2vw, 50px);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1#job {
+  font-weight: 600;
+  /* background: -webkit-linear-gradient(180deg,black,red,black);
+    -webkit-background-clip: text;
+    background-clip: "";
+    -webkit-text-fill-color: transparent; */
+  color: rgb(26, 169, 185);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: clamp(15px, 2vw, 20px);
+}
+
+div#links li:hover {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+div#my-pic {
+  background-image: url("../images/mypic.jpeg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+div#my-pic > h3 {
+  backdrop-filter: blur(10px);
+}

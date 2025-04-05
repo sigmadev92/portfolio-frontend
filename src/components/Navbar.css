@@ -1,0 +1,45 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  padding: 10px 30px;
+  color: white;
+
+  background-color: rgba(2, 2, 22, 0.915);
+  /* backdrop-filter: blur(10px); */
+}
+@media (max-width: 450px) {
+  nav h1 {
+    text-align: right;
+    color: aqua;
+    /* width: 100%; */
+  }
+}
+nav:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(20, 68, 173),
+    rgba(18, 226, 199, 0.19)
+  );
+}
+#heading {
+  font-size: 20px;
+  font-weight: bold;
+}
+#heading:hover {
+  color: rgb(164, 158, 158);
+  cursor: pointer;
+}
+
+div#nav-links > ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+div#nav-links li {
+  cursor: pointer;
+}
+div#nav-links li:hover {
+  color: aqua;
+}
