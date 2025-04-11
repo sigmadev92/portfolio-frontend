@@ -28,7 +28,7 @@ export default function Left() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin className="text-[30px] text-white " />
+              <FaLinkedin className="text-[30px] text-blue-700  " />
             </a>
           </li>
           <li id="github">

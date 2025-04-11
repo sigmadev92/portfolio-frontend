@@ -23,8 +23,11 @@ function Courses() {
         <a href="1" target="blank">
           Data Science and Analytics
         </a>
-        <a href="1" target="blank">
-          Web Dev with Gen AI
+        <a
+          href="https://certificate.codingninjas.com/view/7d86ce65d2a9842f"
+          target="blank"
+        >
+          Generative AI
         </a>
       </div>
     </div>

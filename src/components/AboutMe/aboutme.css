@@ -50,6 +50,12 @@
   color: aqua;
 }
 
+#tech-skills > div {
+  height: 90%;
+  padding: 10px 10px 30px 10px;
+  overflow: scroll;
+}
+
 div#courses > div > a:hover {
   color: aqua;
 }

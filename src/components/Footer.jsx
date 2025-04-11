@@ -4,10 +4,7 @@ function Footer() {
   return (
     <footer>
       <p>
-        <strong>
-          &copy; {new Date().getFullYear()} Devansh-Portfolio.com | All Rights
-          Reserved
-        </strong>
+        <strong>&copy; {new Date().getFullYear()} Devansh-Portfolio.com</strong>
       </p>
     </footer>
   );

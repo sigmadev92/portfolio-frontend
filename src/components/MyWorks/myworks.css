@@ -1,12 +1,54 @@
 #my-works {
-  background-color: black;
+  background-image: linear-gradient(to left, violet, rebeccapurple);
   color: white;
   width: 100%;
   height: 550px;
+  padding: 1rem;
 }
 
 #my-works > h1 {
   text-align: center;
   font-size: 25px;
   font-weight: bold;
+}
+
+#projects-container {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+  /* background-color: rgb(121, 58, 198); */
+}
+.projects-div {
+  width: 300px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.projects-div > .works-img-div {
+  margin: auto;
+  width: 100%;
+}
+.projects-div img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  border: 1px solid;
+}
+
+.projects-div div#links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.projects-div .app-name {
+  color: black;
+  font-weight: bold;
+}
+.projects-div a {
+  font-size: 12px;
 }

@@ -5,7 +5,7 @@ import "./aboutme.css";
 import Courses from "./Courses";
 import Details from "./Details";
 import Experience from "./Experience";
-import Achivements from "./Achivements";
+// import Achivements from "./Achivements";
 function AboutMe() {
   return (
     <div id="about-me" className="w-full">
@@ -16,7 +16,7 @@ function AboutMe() {
         <Academics />
         <TechnicalSkills />
         <Experience />
-        <Achivements />
+        {/* <Achivements /> */}
         <Courses />
         <Details />
       </div>
