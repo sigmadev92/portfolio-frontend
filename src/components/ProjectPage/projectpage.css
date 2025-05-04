@@ -1,0 +1,58 @@
+#projectpage-div {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  gap: 1rem;
+  padding: 1rem;
+}
+#projectpage-div > h2 {
+  font-weight: bolder;
+  background-color: rgba(35, 196, 236, 0.631);
+  color: white;
+  padding-left: 1rem;
+}
+#projectpage-div h3 {
+  font-weight: bold;
+}
+
+.projectpage-divs {
+  box-shadow: 0 0 2px black;
+  padding: 0.5rem;
+}
+.box-heading {
+  font-weight: bold;
+  background-color: blueviolet;
+  color: white;
+  padding: 0.2rem 1rem;
+}
+.box-subheading {
+  font-weight: bold;
+}
+.folder-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+.folder {
+  background-color: transparent;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 0.2rem;
+  overflow: hidden;
+  width: 5rem;
+}
+.folder:hover {
+  box-shadow: 0 0 1px black;
+  background-color: rgb(188, 206, 206);
+}
+
+.folder-icon {
+  color: rgb(179, 58, 240);
+  font-size: 4rem;
+}
+
+.folder-name {
+  text-wrap: wrap;
+}
