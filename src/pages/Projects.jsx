@@ -25,10 +25,13 @@ function Projects() {
           keyword: "full-stack",
           content: [
             { link: "/mern", name: "MERN" },
-            { link: "/embededjs", name: "EmbededJS" },
+            { link: "/mern-with-nextjs", name: "NextJS" },
+            { link: "/embededjs", name: "MVC" },
+            { link: "/rest-api", name: "RestAPI" },
             { link: "/django", name: "Django+React" },
             { link: "/spring-boot", name: "SpringBoot + React" },
             { link: "/laravel", name: "Laravel + React" },
+            { link: "/wordpress", name: "Wordpress" },
           ],
         },
       ],
@@ -64,6 +67,15 @@ function Projects() {
         { link: "/ms-excel", name: "MS Excel" },
         { link: "/powerbi", name: "Power BI" },
         { link: "/python", name: "Python" },
+      ],
+    },
+    {
+      heading: "Android Development",
+      keyword: "android",
+      content: [
+        { link: "/kotlin", name: "Java + Kotlin" },
+        { link: "/react-native", name: "React Native" },
+        { link: "/flutter", name: "Flutter" },
       ],
     },
   ];

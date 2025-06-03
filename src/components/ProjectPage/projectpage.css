@@ -42,14 +42,16 @@
   padding: 0.2rem;
   overflow: hidden;
   width: 5rem;
+  border-radius: 0.4rem;
 }
 .folder:hover {
   box-shadow: 0 0 1px black;
-  background-color: rgb(188, 206, 206);
+  background-color: #fff;
+  color: black;
 }
 
 .folder-icon {
-  color: rgb(179, 58, 240);
+  color: rgb(195, 220, 9);
   font-size: 4rem;
 }
 
