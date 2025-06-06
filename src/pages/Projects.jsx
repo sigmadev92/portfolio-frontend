@@ -82,63 +82,66 @@ function Projects() {
 
   const navigate = useNavigate();
   return (
-    <div id="projectpage-div" className="bg-black text-white justify-center">
-      {projectsInfo.map((box, indexOuter) => {
-        return (
-          <div
-            className="projectpage-divs"
-            id={`projectpage-${box.keyword}`}
-            key={indexOuter}
-          >
-            <h2 className="box-heading">{box.heading}</h2>
-            {box.subCategory ? (
-              box.content.map((part, indexMiddle) => {
-                return (
-                  <>
-                    <h3 className="box-subheading">{part.heading}</h3>
-                    <div className="folder-container" key={indexMiddle}>
-                      {part.content.map((skill, indexInner) => {
-                        return (
-                          <div
-                            className="folder"
-                            key={indexInner}
-                            onClick={() =>
-                              navigate(
-                                `/${box.keyword}/${part.keyword}${skill.link}`
-                              )
-                            }
-                          >
-                            <FaFolderOpen className="folder-icon" />
-                            <span className="folder-name truncate">
-                              {skill.name}
-                            </span>
-                          </div>
-                        );
-                      })}
-                    </div>
-                  </>
-                );
-              })
-            ) : (
-              <div className="folder-container">
-                {box.content.map((skill, indexInner) => {
+    <>
+      <h3>Folders are empty. Will add projects soon.</h3>
+      <div id="projectpage-div" className="bg-black text-white justify-center">
+        {projectsInfo.map((box, indexOuter) => {
+          return (
+            <div
+              className="projectpage-divs"
+              id={`projectpage-${box.keyword}`}
+              key={indexOuter}
+            >
+              <h2 className="box-heading">{box.heading}</h2>
+              {box.subCategory ? (
+                box.content.map((part, indexMiddle) => {
                   return (
-                    <div
-                      className="folder"
-                      key={indexInner}
-                      onClick={() => navigate(`/${box.keyword}${skill.link}`)}
-                    >
-                      <FaFolderOpen className="folder-icon" />
-                      <span className="folder-name">{skill.name}</span>
-                    </div>
+                    <>
+                      <h3 className="box-subheading">{part.heading}</h3>
+                      <div className="folder-container" key={indexMiddle}>
+                        {part.content.map((skill, indexInner) => {
+                          return (
+                            <div
+                              className="folder"
+                              key={indexInner}
+                              onClick={() =>
+                                navigate(
+                                  `/${box.keyword}/${part.keyword}${skill.link}`
+                                )
+                              }
+                            >
+                              <FaFolderOpen className="folder-icon" />
+                              <span className="folder-name truncate">
+                                {skill.name}
+                              </span>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </>
                   );
-                })}
-              </div>
-            )}
-          </div>
-        );
-      })}
-    </div>
+                })
+              ) : (
+                <div className="folder-container">
+                  {box.content.map((skill, indexInner) => {
+                    return (
+                      <div
+                        className="folder"
+                        key={indexInner}
+                        onClick={() => navigate(`/${box.keyword}${skill.link}`)}
+                      >
+                        <FaFolderOpen className="folder-icon" />
+                        <span className="folder-name">{skill.name}</span>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </>
   );
 }
 
