@@ -50,7 +50,10 @@ function Projects() {
     {
       heading: "3d Modelling and Animations",
       keyword: "3d-modelling",
-      content: [{ link: "/blender", name: "Blender" }],
+      content: [
+        { link: "/blender", name: "Blender" },
+        { link: "/snapchat-lens", name: "Snapchat Lens" },
+      ],
     },
     {
       heading: "Game Development",
@@ -106,7 +109,7 @@ function Projects() {
                               key={indexInner}
                               onClick={() =>
                                 navigate(
-                                  `/${box.keyword}/${part.keyword}${skill.link}`
+                                  `/${box.keyword}-${part.keyword}${skill.link}`
                                 )
                               }
                             >
