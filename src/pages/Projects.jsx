@@ -14,9 +14,7 @@ function Projects() {
           keyword: "frontend",
           content: [
             { link: "/html-css", name: "HTML+CSS" },
-            { link: "/css-shapes", name: "CSS Shapes" },
-            { link: "/css-animations", name: "CSS Animations" },
-            { link: "/js", name: "JavaScript" },
+            { link: "/js", name: "JS-DOM" },
             { link: "/react", name: "ReactJS" },
           ],
         },
@@ -25,13 +23,14 @@ function Projects() {
           keyword: "full-stack",
           content: [
             { link: "/mern", name: "MERN" },
-            { link: "/mern-with-nextjs", name: "NextJS" },
+            { link: "/mern-with-nextjs", name: "NextJS", empty: true },
             { link: "/embededjs", name: "MVC" },
-            { link: "/rest-api", name: "RestAPI" },
-            { link: "/django", name: "Django+React" },
-            { link: "/spring-boot", name: "SpringBoot + React" },
-            { link: "/laravel", name: "Laravel + React" },
-            { link: "/wordpress", name: "Wordpress" },
+            { link: "/socket-io", name: "Sockets" },
+            { link: "/rest-api", name: "RestAPI", empty: true },
+            { link: "/django", name: "Django+React", empty: true },
+            { link: "/spring-boot", name: "SpringBoot + React", empty: true },
+            { link: "/laravel", name: "Laravel + React", empty: true },
+            { link: "/wordpress", name: "Wordpress", empty: true },
           ],
         },
       ],
@@ -40,45 +39,45 @@ function Projects() {
       heading: "Desktop Applications",
       keyword: "desktop",
       content: [
-        { link: "/electron-node", name: "Electron+NodeJS" },
-        { link: "/java-gui", name: "Java + JavaFx" },
-        { link: "/cpp-gui", name: "C++ GUI" },
-        { link: "/c#-wpf", name: "C#+WPF" },
-        { link: "/python-gui", name: "Python GUI" },
+        { link: "/electron-node", name: "Electron+NodeJS", empty: true },
+        { link: "/java-gui", name: "Java + JavaFx", empty: true },
+        { link: "/cpp-gui", name: "C++ GUI", empty: true },
+        { link: "/c#-wpf", name: "C#+WPF", empty: true },
+        { link: "/python-gui", name: "Python GUI", empty: true },
       ],
     },
     {
       heading: "3d Modelling and Animations",
       keyword: "3d-modelling",
       content: [
-        { link: "/blender", name: "Blender" },
-        { link: "/snapchat-lens", name: "Snapchat Lens" },
+        { link: "/blender", name: "Blender", empty: true },
+        { link: "/snapchat-lens", name: "Snapchat Lens", empty: true },
       ],
     },
     {
       heading: "Game Development",
       keyword: "game-dev",
       content: [
-        { link: "/unity", name: "C# + Unity" },
-        { link: "/browser", name: "JS + Browser" },
+        { link: "/unity", name: "C# + Unity", empty: true },
+        { link: "/browser", name: "JS + Browser", empty: true },
       ],
     },
     {
       heading: "Data Science, AI and ML",
       keyword: "data-science",
       content: [
-        { link: "/ms-excel", name: "MS Excel" },
-        { link: "/powerbi", name: "Power BI" },
-        { link: "/python", name: "Python" },
+        { link: "/ms-excel", name: "MS Excel", empty: true },
+        { link: "/powerbi", name: "Power BI", empty: true },
+        { link: "/python", name: "Python", empty: true },
       ],
     },
     {
       heading: "Android Development",
       keyword: "android",
       content: [
-        { link: "/kotlin", name: "Java + Kotlin" },
-        { link: "/react-native", name: "React Native" },
-        { link: "/flutter", name: "Flutter" },
+        { link: "/kotlin", name: "Java + Kotlin", empty: true },
+        { link: "/react-native", name: "React Native", empty: true },
+        { link: "/flutter", name: "Flutter", empty: true },
       ],
     },
   ];
@@ -86,7 +85,7 @@ function Projects() {
   const navigate = useNavigate();
   return (
     <>
-      <h3>Folders are empty. Will add projects soon.</h3>
+      <h3>Blue Folders are empty. Will add projects soon.</h3>
       <div id="projectpage-div" className="bg-black text-white justify-center">
         {projectsInfo.map((box, indexOuter) => {
           return (
@@ -107,13 +106,23 @@ function Projects() {
                             <div
                               className="folder"
                               key={indexInner}
-                              onClick={() =>
+                              onClick={() => {
+                                if (skill.empty) {
+                                  alert("Sorry! No projects added yet");
+                                  return;
+                                }
                                 navigate(
                                   `/${box.keyword}-${part.keyword}${skill.link}`
-                                )
-                              }
+                                );
+                              }}
                             >
-                              <FaFolderOpen className="folder-icon" />
+                              <FaFolderOpen
+                                className={`${
+                                  skill.empty
+                                    ? "folder-icon-faded"
+                                    : "folder-icon"
+                                }`}
+                              />
                               <span className="folder-name truncate">
                                 {skill.name}
                               </span>
@@ -131,9 +140,19 @@ function Projects() {
                       <div
                         className="folder"
                         key={indexInner}
-                        onClick={() => navigate(`/${box.keyword}${skill.link}`)}
+                        onClick={() => {
+                          if (skill.empty) {
+                            alert("Projects are not added yet");
+                            return;
+                          }
+                          navigate(`/${box.keyword}${skill.link}`);
+                        }}
                       >
-                        <FaFolderOpen className="folder-icon" />
+                        <FaFolderOpen
+                          className={`${
+                            skill.empty ? "folder-icon-faded" : "folder-icon"
+                          }`}
+                        />
                         <span className="folder-name">{skill.name}</span>
                       </div>
                     );

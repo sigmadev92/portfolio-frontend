@@ -55,6 +55,11 @@
   font-size: 4rem;
 }
 
+.folder-icon-faded {
+  color: rgb(33, 39, 214);
+  font-size: 4rem;
+}
+
 .folder-name {
   text-wrap: wrap;
 }
