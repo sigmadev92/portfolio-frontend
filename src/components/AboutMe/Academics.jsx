@@ -4,6 +4,10 @@ function Academics() {
   return (
     <div id="academics" className="about-me-div">
       <h1>Academics</h1>
+      <h2>Full Stack Web Development Bootcamp</h2>
+      <p>
+        Coding Ninjas | Sunshine Educators Private Ltd , March 2025 - Dec 2025
+      </p>
       <h2 className="font-bold">
         Graduation - <em>BSc H Mathematics</em>
       </h2>
