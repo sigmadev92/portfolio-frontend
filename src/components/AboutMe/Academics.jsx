@@ -3,7 +3,7 @@ import React from "react";
 function Academics() {
   return (
     <div id="academics" className="about-me-div">
-      <h1>Academics</h1>
+      <h1>Education</h1>
       <h2>Full Stack Web Development Bootcamp</h2>
       <p>
         Coding Ninjas | Sunshine Educators Private Ltd , March 2025 - Dec 2025
