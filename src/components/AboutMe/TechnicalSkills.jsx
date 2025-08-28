@@ -9,7 +9,8 @@ function TechnicalSkills() {
           <li>Frontend : HTML, CSS, JavaScript,EmbeddedJs</li>
           <li>Backend : NodeJs, Multer</li>
           <li>Frameworks : Express, Bootstrap, Tailwind, React, Redux</li>
-          <li>Databases : Postgres, MongoDb</li>
+          <li>Databases : Postgres, MongoDb, Firebase, MySQL</li>
+          <li>Tools : Visual Studio, VS Code, IntelliJ Idea, Android Studio</li>
         </ul>
 
         <p></p>
@@ -23,14 +24,15 @@ function TechnicalSkills() {
           <strong>Data Science and Analytics :</strong> PowerBI, MS Excel
         </p>
         <p>
-          <strong>3d Animation and Game Dev :</strong> Blender, Unity
+          <strong>3d Animation and Game Dev :</strong> Blender, Unity, Snapchat
+          Lens Studio
         </p>
         <p>
           <strong>Utility Tools :</strong> MS Word, Powerpoint, GIMP2, Canva,
-          Gen-AI
+          Gen-AI , Audacity, VS
         </p>
         <p>
-          <strong>DevOps :</strong> Docker, Git, Cloudinary
+          <strong>DevOps :</strong> Docker, Git, Cloudinary, AWS EC2
         </p>
       </div>
     </div>

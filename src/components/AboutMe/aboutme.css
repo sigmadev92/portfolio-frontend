@@ -34,6 +34,8 @@
 }
 .about-me-div a:hover {
   color: aqua;
+  background-color: black;
+  padding: 0.3rem;
 }
 
 #tech-skills > div {
@@ -43,7 +45,7 @@
 }
 
 div#courses > div > a:hover {
-  color: aqua;
+  color: rgb(80, 179, 179);
 }
 
 #details {
@@ -72,7 +74,9 @@ div#courses > div > a:hover {
   font: bold;
   font-size: 20px;
   width: 100%;
-  background-color: rgba(28, 73, 113, 0.894);
+  text-decoration: underline;
+  color: white;
+  background-color: rgba(41, 103, 179, 0.701);
   transform: translateX(0%);
 }
 /* #details:hover {

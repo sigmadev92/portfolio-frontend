@@ -60,7 +60,7 @@ div#links li:hover {
 }
 
 div#my-pic {
-  background-image: url("../../images/mypic.jpeg");
+  background-image: url("https://res.cloudinary.com/dwyeologv/image/upload/v1756370203/WhatsApp_Image_2025-03-24_at_7.19.50_AM_znupkl.jpg");
   background-position: center;
   background-size: cover;
   position: relative;

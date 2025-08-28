@@ -1,13 +1,17 @@
 import React from "react";
-import socialMediaImg from "../../images/social-media-ss.png";
 function WebDevelop() {
   return (
     <figure className="projects-div">
       <div className="works-img-div">
-        <img src={socialMediaImg} alt="mail-scene" />
+        <img
+          src={
+            "https://res.cloudinary.com/dwyeologv/image/upload/v1756371816/Screenshot_2024-10-21_162639_tsd7s9.png"
+          }
+          alt="thumbnail"
+        />
       </div>
       <figcaption>
-        <h2 className="app-name">Social Media App</h2>
+        <h2 className="app-name">Job Portal</h2>
         <h3 className="app-tech">Full Stack MERN + Boostrap</h3>
         <div id="links">
           <a

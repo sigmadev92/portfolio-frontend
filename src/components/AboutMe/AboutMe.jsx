@@ -29,7 +29,7 @@ function AboutMe() {
           <button
             key={index}
             className={`${btnclass} ${
-              btn1 === btn.btn && "bg-[#456ddd] text-[#fff]"
+              btn1 === btn.btn && "bg-[#de12cae1] text-[#fff]"
             }`}
             onClick={() => setBtn(btn.btn)}
           >
